@@ -11,7 +11,7 @@ symptom1= input("Are you experencing a high fever(A body tempature of 100.0 degr
 while True:
     if symptom1 == "1":
         print("A High fever is a sign that you may be infected. We advise for you to regulary check your tempature and seek medical help if needed")
-        symptoms += "1"
+        symptoms += ("1")
         patient_symp.append("Fever")
         break
     elif symptom1 == "0":
@@ -128,6 +128,12 @@ while True:
         if symptom10 !="1" or "0":
             symptom10 = input("Please type either 1 for yes, or, 0 for no: ")  
 
+print("These are the symptoms that you stated you are experiencing,", patient_symp)
+
+for i in range(0, len(symptoms)): 
+    symptoms[i] = int(symptoms[i]) 
+print(sum(symptoms))
+
 
 
 
@@ -135,7 +141,3 @@ while True:
 #Print out the symptom list
 #If patient has >3 of the symptoms , bring up a message
 #If patient has "fever" bring up alternative message, asking if X has been near an infected location or person
-
-
-
-    
