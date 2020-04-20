@@ -17,7 +17,7 @@ while True:
     elif symptom1 == "0":
         break
     else:
-        if symptom1 > "1":
+        if symptom1 !="1" or "0":
             symptom1 = input("Please type either 1 for yes, or , 0 for no: ")
         
 symptom2 = input("Have you experienced a dry cough within the past couple of days? (1 for yes) or (0 for no): ")
@@ -29,7 +29,7 @@ while True:
     elif symptom2 == "0":
         break
     else:
-        if symptom2 > "1":
+        if symptom2 !="1" or "0":
             symptom2 = input("Please type either 1 for yes, or , 0 for no: ")
 
 symptom3 = input("Have you experienced a shortness of breath within the past couple of days? (1 for yes) or (0 for no): ")
@@ -41,7 +41,7 @@ while True:
     elif symptom3 =="0":
         break
     else:
-        if symptom3 >"1":
+        if symptom3 !="1" or "0":
             symptom3 = input("Please type either 1 for yes, or, 0 for no: ")
 
 symptom4 = input("Have you felt abnormaly tired in the past couple of days? (1 for yes) or (0 for no): ")
@@ -53,7 +53,7 @@ while True:
     elif symptom4 =="0":
         break
     else:
-        if symptom4 >"1":
+        if symptom4 !="1" or "0":
             symptom4 = input("Please type either 1 for yes, or, 0 for no: ")
 
 symptom5 = input("Have you had any aches recently? (1 for yes) or (0 for no): ")
@@ -65,7 +65,7 @@ while True:
     elif symptom5 =="0":
         break
     else:
-        if symptom5 >"1":
+        if symptom5 !="1" or "0":
             symptom5 = input("Please type either 1 for yes, or, 0 for no: ")
             
 symptom6 = input("Do you have a runny nose ? (1 for yes) or (0 for no): ")
@@ -77,7 +77,7 @@ while True:
     elif symptom6 =="0":
         break
     else:
-        if symptom6 >"1":
+        if symptom6 !="1" or "0":
             symptom6 = input("Please type either 1 for yes, or, 0 for no: ")
             
 symptom7 = input("Do you have a sore throat? (1 for yes) or (0 for no): ")
@@ -89,7 +89,7 @@ while True:
     elif symptom7 =="0":
         break
     else:
-        if symptom7 >"1":
+        if symptom7 !="1" or "0":
             symptom7 = input("Please type either 1 for yes, or, 0 for no: ") 
 
 symptom8 = input("Are you experencing any headaches? (1 for yes) or (0 for no): ")
@@ -101,7 +101,7 @@ while True:
     elif symptom8 =="0":
         break
     else:
-        if symptom8 >"1":
+        if symptom8 !="1" or "0":
             symptom8 = input("Please type either 1 for yes, or, 0 for no: ")    
 
 symptom9 = input("Have you experienced diarrhea in the past couple of days? (1 for yes) or (0 for no): ")
@@ -113,7 +113,7 @@ while True:
     elif symptom9 =="0":
         break
     else:
-        if symptom9 >"1":
+        if symptom9 !="1" or "0":
             symptom9 = input("Please type either 1 for yes, or, 0 for no: ")   
 
 symptom10 = input("Have you experienced vomitting? (1 for yes) or (0 for no): ")
@@ -125,8 +125,12 @@ while True:
     elif symptom10 =="0":
         break
     else:
-        if symptom10 >"1":
+        if symptom10 !="1" or "0":
             symptom10 = input("Please type either 1 for yes, or, 0 for no: ")  
+
+
+
+
 
 #Print out the symptom list
 #If patient has >3 of the symptoms , bring up a message
