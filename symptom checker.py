@@ -65,8 +65,68 @@ while True:
     elif symptom5 =="0":
         break
     else:
-        if symptom3 >"1":
-            symptom3 = input("Please type either 1 for yes, or, 0 for no: ")
+        if symptom5 >"1":
+            symptom5 = input("Please type either 1 for yes, or, 0 for no: ")
+            
+symptom6 = input("Do you have a runny nose ? (1 for yes) or (0 for no): ")
+while True:
+    if symptom6 == "1":
+        symptoms +="1"
+        patient_symp.append("Runny Nose")
+        break
+    elif symptom6 =="0":
+        break
+    else:
+        if symptom6 >"1":
+            symptom6 = input("Please type either 1 for yes, or, 0 for no: ")
+            
+symptom7 = input("Do you have a sore throat? (1 for yes) or (0 for no): ")
+while True:
+    if symptom7 == "1":
+        symptoms +="1"
+        patient_symp.append("Sore Throat")
+        break
+    elif symptom7 =="0":
+        break
+    else:
+        if symptom7 >"1":
+            symptom7 = input("Please type either 1 for yes, or, 0 for no: ") 
+
+symptom8 = input("Are you experencing any headaches? (1 for yes) or (0 for no): ")
+while True:
+    if symptom8 == "1":
+        symptoms +="1"
+        patient_symp.append("Headache")
+        break
+    elif symptom8 =="0":
+        break
+    else:
+        if symptom8 >"1":
+            symptom8 = input("Please type either 1 for yes, or, 0 for no: ")    
+
+symptom9 = input("Have you experienced diarrhea in the past couple of days? (1 for yes) or (0 for no): ")
+while True:
+    if symptom9 == "1":
+        symptoms +="1"
+        patient_symp.append("Diarrhea")
+        break
+    elif symptom9 =="0":
+        break
+    else:
+        if symptom9 >"1":
+            symptom9 = input("Please type either 1 for yes, or, 0 for no: ")   
+
+symptom10 = input("Have you experienced vomitting? (1 for yes) or (0 for no): ")
+while True:
+    if symptom10 == "1":
+        symptoms +="1"
+        patient_symp.append("Vomitting")
+        break
+    elif symptom10 =="0":
+        break
+    else:
+        if symptom10 >"1":
+            symptom10 = input("Please type either 1 for yes, or, 0 for no: ")  
 
 #Print out the symptom list
 #If patient has >3 of the symptoms , bring up a message
