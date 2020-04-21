@@ -5,16 +5,22 @@ symptom_list = ["Fever,Cough,Shortness of breath,Tiredness,Aches,Runny Nose,Sore
 
 print("These are the symptoms most commonly associated with the virus:", symptom_list)
 
+# Number of symptoms displayed in numerical format
 symptoms=[]
+#Symptoms displayed will be appeneded into list
 patient_symp =[]
+
 symptom1= input("Are you experencing a high fever(A body tempature of 100.0 degrees or more)? (1 for yes) or (0 for No): ")
 while True:
+    #If it is a 1 it will add 1 to the list [symptoms] and append the symptom to the list [patient_symp]
     if symptom1 == "1":
         symptoms += ("1")
         patient_symp.append("Fever")
         break
+    #If answer is 0, program will do nothing and move to the next option
     elif symptom1 == "0":
         break
+    #Prevents the program from crashing. Will only take the following numbers.
     else:
         if symptom1 !="1" or "0":
             symptom1 = input("Please type either 1 for yes, or , 0 for no: ")
@@ -126,11 +132,15 @@ while True:
     else:
         if symptom10 !="1" or "0":
             symptom10 = input("Please type either 1 for yes, or, 0 for no: ")  
-
+#Turns the string in the list [symptoms] and converts it to an interger so it can be added.
 for i in range(0, len(symptoms)): 
     symptoms[i] = int(symptoms[i]) 
 
 print("You stated you are experiencing",sum(symptoms),"symptom(s): \n", patient_symp,)
+
+print("\n\n")
+ 
+#Depending on answers above one of the following will show for the user
 
 if sum(symptoms) >= 3 and "Fever" in patient_symp:
     print("You have 3 or more symptoms that could indicate you have contracted Covid-19.")
@@ -139,8 +149,6 @@ elif sum(symptoms) >=3:
     print("You have 3 or more symptoms that could indicate you have contracted Covid-19.Please contact your primary care physician if your condition gets worse")
 elif "Fever" in patient_symp:
     print("You indicated you had a fever. Please contact your primary care physican for better examination if it gets worse")
-    if "Sore Throat" in patient_symp:
-        print("Please also monitor your sore throat as well.")
 elif "Fever" and "Sore Throat" in patient_symp:
     print("A fever and sore throat could indicate you have contracted Covid-19. Contact your primary care physican if your condition gets worse.")
 elif sum(symptoms)<=2 and "Fever" not in patient_symp:
@@ -148,6 +156,20 @@ elif sum(symptoms)<=2 and "Fever" not in patient_symp:
 else:
     if sum(symptoms) == 0:
         print("You seem fine. Let us know if you experience any complications")
+
+#Ask user to input contact information
+print("\nPlease Input your contact information or click enter to skip")
+print("\n")
+FirstName = input("Please Type in your First Name: ")
+print("\n")
+LastName = input("Please Type in Your Last Name:")
+print("\n")
+PhoneNum = input("Please Type in Your Phone Number in the Following format. (999-999-9999): ")
+print("\n")
+
+print("This is the contact information you submitted:", LastName, FirstName, PhoneNum, "\nThank you for running through the symptom checker.")
+
+
 
 
     
@@ -158,6 +180,3 @@ else:
 
 
 
-#Print out the symptom list
-#If patient has >3 of the symptoms , bring up a message
-#If patient has "fever" bring up alternative message, asking if X has been near an infected location or person
