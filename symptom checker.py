@@ -139,6 +139,8 @@ elif sum(symptoms) >=3:
     print("You have 3 or more symptoms that could indicate you have contracted Covid-19.Please contact your primary care physician if your condition gets worse")
 elif "Fever" in patient_symp:
     print("You indicated you had a fever. Please contact your primary care physican for better examination if it gets worse")
+    if "Sore Throat" in patient_symp:
+        print("Please also monitor your sore throat as well.")
 elif "Fever" and "Sore Throat" in patient_symp:
     print("A fever and sore throat could indicate you have contracted Covid-19. Contact your primary care physican if your condition gets worse.")
 elif sum(symptoms)<=2 and "Fever" not in patient_symp:
