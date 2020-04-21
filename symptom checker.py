@@ -169,7 +169,7 @@ print("\n")
 
 print("This is the contact information you submitted:", LastName, FirstName, PhoneNum, "\nThank you for running through the symptom checker.")
 
-
+input('Press ENTER to exit')
 
 
     
